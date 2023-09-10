@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" method="post">
+            {% csrf_token %}
+            <h1>Register form</h1>
+            <div class="input-name">
+                <input type="text" placeholder="Enter your name" name="name">
+            </div>
+
+            <div class="input-email">
+                <input type="email" placeholder="Enter an email" name="email">
+            </div>
+
+            <div class="input-phone-number">
+                <input type="text" name="phone_number" placeholder="Enter phone number">
+            </div>
+
+            <div class="input-password">
+                <input type="password" placeholder="Enter password" name="password">
+            </div>
+
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
+
